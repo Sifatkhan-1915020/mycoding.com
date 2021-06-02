@@ -97,11 +97,64 @@ int upside_down_half_pyramid()
       }
     	
 	}
+	
+  //circle 
+    int mechanism(int x,int y)
+          {
+          	return sqrt(pow(x,2)+pow(y,2)) ;
+		  }
+    	 
+   int invert_circle()
+    {    
+         int radius;
+         cin>>radius;
+         
+         int horizontal=radius;
+         int verticle =radius;
+         
+           for(int y=verticle; y>=-verticle;y-=2)
+           {
+		   
+            for(int x=-horizontal;x<=horizontal;x++)
+             {
+             	if((int) mechanism(x,y)>=radius)
+             	 cout<<"*";
+             	else
+             	 cout<<" ";
+			 }
+            cout<<endl;
+		  }
+	}
+	
+  //circle
+  int circle()
+   {
+   	int r;
+   	cin>>r;
+   	 
+   	  int length = r;
+   	  int width =r;
+   	  
+   	   for(int y=width;y>=-width;y-=2)
+   	    {
+   	    	for(int x=-length;x<=length;x++)
+   	    	 {
+   	    	 	if((int)mechanism(x,y)<=r)
+   	    	 	  cout<<"*";
+   	    	 	else 
+   	    	 	  cout<<" ";
+				}
+			cout<<endl;
+		   }
+   }
+ 
  int main()
   {
-  	half_pyramid();
+  	/*half_pyramid();
   	upside_down_half_pyramid();
   	fullpyramid();
   	upside_down_fullpyramid();
-  	pascale();
+  	pascale();*/
+  	circle();
+  	invert_circle();
   }
