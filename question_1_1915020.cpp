@@ -1,18 +1,17 @@
 
-#include <iostream>
-using namespace std;
+#include <iostream>    //math.h  string  graphics.h
+using namespace std;   //standard input output
 
 int main()
 {
 int i, j, n,sum=0;
-
 cin >> n;
 int sum1=0;
 for(i = 1; i <= n; i++)
 {
-for(j = i; j < n; j++)
+for(j = i; j < n; j++)  //i=1 i=2 i=3 i=4 
 {
-cout << " ";
+cout << " ";    //spacing 
 }
 for(j = 1; j <= i; j++)
 {
