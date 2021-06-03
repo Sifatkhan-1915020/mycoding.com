@@ -99,7 +99,7 @@ int upside_down_half_pyramid()
     	
 	}
 	
-  //circle 
+  //invert circle 
     int mechanism(int x,int y)
           {
           	return sqrt(pow(x,2)+pow(y,2)) ;
@@ -149,7 +149,7 @@ int upside_down_half_pyramid()
    
    //ajaira
    
-   int ajaira() 
+   int ajair() 
    { 
     int x=1;
    	for(int i=1;i<=row;i++)
@@ -163,7 +163,23 @@ int upside_down_half_pyramid()
 			cout<<endl;
 		}
    }
-
+//fibonacci number
+  int fibonacci()
+   { 
+    int koto;
+    cout<<"koto porjonto dekhben bhai";
+    cin>>koto;
+    int first=0;
+    int second=1;
+    int porerta;
+      for(int i=1;i<=koto;i++)
+       {
+         for(int space=1;space<=row-i;space++)
+          cout<<"  ";
+          
+        for(int )
+	   }
+   }
  
  int main()
   { 
@@ -174,8 +190,8 @@ int upside_down_half_pyramid()
   	upside_down_fullpyramid();
   	pascale();
   	cout<<endl;
-  	ajaira();
+  	ajair();
   	circle();
   	invert_circle();
-  	
+  	fibonacci();
   }
