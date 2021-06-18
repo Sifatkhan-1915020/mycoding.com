@@ -1,7 +1,5 @@
 #include <iostream>
 #include <math.h>
-#include <conio.h>
-#include <string>
 #define pi 3.1915
 
  using namespace std;
@@ -27,7 +25,5 @@ int main(){
 	 cout<<"The decoy in the air time "<<time<<" second"<<endl;
 	 cout<<"The height of the decoy at the time of relase "<<height_Y<<" meter"<<endl;
 	 
-	getch();
-	system("pause");
 	 
 }
