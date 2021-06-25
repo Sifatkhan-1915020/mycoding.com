@@ -13,7 +13,7 @@ using namespace std;
      
        for(int i=0;i<13;i++)
         {
-           for(int j=i+1;j<13;j++)
+           for(int j=i;j<13;j++)
            {
            	  if(array[i]==array[j])
            	   cout<<array[j]<<endl;
