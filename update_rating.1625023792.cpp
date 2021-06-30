@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
  {  
- 	float  array[]={23,24,88,6,9,23,45,67,123,22,89,90};
+ 	int array[]={23,24,88,6,9,23,45,67,123,22,89,90};
  	int n = sizeof(array)/sizeof(array[0]);
- 	float b,k;
+ 	int b,k;
  	  for(int i=0;i<n;i++)
  	   {
  	   	 b=max(b,array[i]);
@@ -16,7 +16,7 @@ int main()
 		}
 	 for(int i=0;i<n;i++)
 	   {
-	   	 array[i]=array[i]/b;
+	   	array[i]=(float)array[i]/b;
 	   	cout<<array[i]<<"  ";
 	   }
 	cout<<"index "<<k<<" is heighst  "<<b<<endl;
