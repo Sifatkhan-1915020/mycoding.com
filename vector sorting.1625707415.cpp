@@ -10,7 +10,7 @@ using namespace std;
    {
    	   while(left<=right)
    	     { 
-   	         int middle =(left+right)/2;
+   	         int middle =(left+right-1)/2;
    	           
    	           
    	           if(ar[middle]==x)
@@ -177,7 +177,7 @@ int main()
                  for everything false return -1 */
                  
 
-     int garray[]={23,22,21,55,55,55,55,55,45,45,12,3,33,44,44,12,23,34};
+     int garray[]={23,22,21,55,45,12,3,33,44,12,23,34};
      
      int   element =sizeof(garray)/sizeof(0);
       cout<<element<<endl;
@@ -197,40 +197,29 @@ int main()
       
      int result= binarySearch(garray,0,element-1,search_object);
      
-      auto high =upper_bound(garray,garray+element,search_object);
-      auto low  =lower_bound(garray,garray+element,search_object);
-      
-      cout<<high-low<<endl;
-      
        if(result!=-1)
         {  
         cout<<"you searched to find "<<search_object<<" which is in the position(s) :"<<endl;
-           cout<<result<<endl;
-        	
+           cout<<result+1<<endl;
+        	for(int i=result+1;i<element-1;i++)
+        	 {
+        	 	if(garray[i]==search_object)
+        	 	 {
+				   cout<<i+1<<endl;
+			     break;
+			   }
 			
 		}
 		
       
-  
+  }
       else
          {
          	cout<<"amago kache ei maal nai bhai "<<endl;
 		 }
       
       
-  //map is for customize index
-  
-  map<string,int > m;
-  map<string,int>::iterator rep;
-  
-  m.insert(make_pair("sifat",12));
-  m.insert(make_pair("labib",13));
-  m.insert(make_pair("fardin",14));
-  cout<<m.size()<<endl;
-  for(rep=m.begin();rep!=m.end();rep++)
-   {
-   	 cout<<rep->first<<"  "<<rep->second<<endl;
-   }
+
 
  
 			 
