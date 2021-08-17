@@ -120,7 +120,7 @@ void insertSorting(int array[],int size) {
 
 //binry searching 
 
-/*int binarySea(int array[],int left,int right,int x)
+int binarySea(int array[],int left,int right,int x)
  {  
     while(left<=right) {
 	
@@ -134,7 +134,7 @@ void insertSorting(int array[],int size) {
      }
      return -1;
      
- }*/
+ }
  
  
 

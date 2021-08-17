@@ -118,26 +118,10 @@ void insertSorting(int array[],int size) {
 	
 }
 
-//binry searching 
-
-/*int binarySea(int array[],int left,int right,int x)
- {  
-    while(left<=right) {
-	
- 	int midddle =(left+right)/2;
- 	 if(array[middle]==x)
- 	  return middle;
- 	 if(array[middle]<x)
- 	  right=middle;
- 	 if(array[middle]>x)
- 	  left=middle;
-     }
-     return -1;
-     
- }*/
  
  
-
+ 
+ 
  
  
  
